@@ -160,7 +160,7 @@ function handleDelete() {
       currentOperandDisplay.textContent = "0";
     }
   }
-  if (currentOperand === "" && previousOperand !== "" && operaqtor === "") {
+  if (currentOperand === "" && previousOperand !== "" && operator === "") {
     previousOperand = previousOperand.slice(0, -1);
     currentOperandDisplay.textContent = previousOperand;
   }
