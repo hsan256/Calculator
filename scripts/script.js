@@ -100,13 +100,8 @@ function calculate() {
     }
     previousOperand /= currentOperand;
   }
-  previousOperand = rounding(previousOperand);
   previousOperand = previousOperand.toString();
   displayResult();
-}
-
-function rounding(num) {
-  return Math.round(num * 100000) / 100000;
 }
 
 function displayResult() {
