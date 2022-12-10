@@ -24,6 +24,7 @@ const numberButtons = document.querySelectorAll("#number");
 const operators = document.querySelectorAll("#operation");
 
 const clearAll = document.querySelector("#all-clear");
+
 clearAll.addEventListener("click", function () {
   previousOperand = "";
   previousOperandDisplay.textContent = "";
@@ -33,7 +34,9 @@ clearAll.addEventListener("click", function () {
 });
 
 const backSpace = document.querySelector("#delete");
-backSpace.addEventListener("click", function () {});
+backSpace.addEventListener("click", function () {
+  handleDelete();
+});
 
 numberButtons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
