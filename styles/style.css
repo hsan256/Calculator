@@ -2,7 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: normal;
 }
 
